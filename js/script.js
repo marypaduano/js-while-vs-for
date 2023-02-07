@@ -6,19 +6,16 @@ let resto = number % 2
 let numberList = []
 
 
-//l'utente deve inserire numeri finchè non ne inserirà 10 dispari da inserire nell'array
+// l'utente deve inserire numeri finchè non ne inserirà 10 dispari da inserire nell'array
 while (numberList.length < 10){
     number = parseInt(prompt('Inserisci un numero'))
     console.log(number)
-
-    if ((resto === 0) || isNaN(number) ){
-        console.log('il numero è pari o non valido')
-        continue
-    }  
-    else{
+    // for (let )
+    if (resto === 1 || !isNaN(number)){
         numberList.push(number)
         console.log('inserisco numero dispari in array')  
-    } 
+    }  
 }   
 
 console.log (numberList)
+
