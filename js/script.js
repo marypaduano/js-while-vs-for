@@ -1,21 +1,22 @@
 console.log('while')
-//dichiaro numero all'utente
-let number
-//dichiaro variabile resto ed array vuoto dove pushare numeri dispari
-let resto = number % 2
+//dichiaro variabile array vuoto dove pushare numeri dispari
 let numberList = []
-
 
 // l'utente deve inserire numeri finchè non ne inserirà 10 dispari da inserire nell'array
 while (numberList.length < 10){
-    number = parseInt(prompt('Inserisci un numero'))
+    let number = parseInt(prompt('Inserisci un numero intero'))
     console.log(number)
+    const resto = number % 2
     // for (let )
-    if (resto === 1 || !isNaN(number)){
+    if (resto === 1){
         numberList.push(number)
         console.log('inserisco numero dispari in array')  
     }  
 }   
-
 console.log (numberList)
+
+for (let i = 0; i < numberList.length; i++){
+    const currentNumber = numberList[i]
+    console.log(currentNumber)
+}
 
